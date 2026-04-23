@@ -5,7 +5,21 @@ Todos as mudanças notáveis neste projeto serão documentadas neste arquivo.
 O formato é baseado em [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 e este projeto aderir ao [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [5.0.0](https://github.com/SEU_USUARIO/rtlinux/compare/v4.0.0...v5.0.0) - 2026-04-23
+## [5.0.0](https://github.com/DevTroli/RuTrackGames/compare/v4.0.0...v5.0.0) - 2026-04-23
+
+### 📦 PyPI Distribution
+
+- **Reestruturação para pacote Python**
+  - Código movido para package `rl/` (`rl/__init__.py`, `rl/rtgames.py`)
+  - Entry point para comando global: `rutracker-games`
+  - `pyproject.toml` configurado para build com hatchling
+  
+- **Disponível via PyPI/TestPyPI**
+  - `pip install rutracker-games`
+  - Build: `uv build` → produz `.whl` e `.tar.gz`
+  - Upload: `twine upload dist/*.whl`
+
+### 🔒 Segurança
 
 ### 🔒 Segurança
 
