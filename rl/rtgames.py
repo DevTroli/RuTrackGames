@@ -876,12 +876,12 @@ def main():
   mac      Mac Games only
 
 Examples:
-  ./rtlinux.py                    interactive, all games
-  ./rtlinux.py -g "NieR"          direct search
-  ./rtlinux.py -g "NieR" -a       show all results (no cap)
-  ./rtlinux.py --forum linux      only Linux-native games
-  ./rtlinux.py -c                 full catalog
-  ./rtlinux.py -r                 force re-fetch from site
+  rutracker-games                 interactive, all games
+  rutracker-games -g "NieR"       direct search
+  rutracker-games -g "NieR" -a    show all results (no cap)
+  rutracker-games --forum linux   only Linux-native games
+  rutracker-games -c              full catalog
+  rutracker-games -r              force re-fetch from site
 """,
     )
     ap.add_argument("-g", "--game", metavar="QUERY", help="Search query")
