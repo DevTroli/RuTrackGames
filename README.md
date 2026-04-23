@@ -1,61 +1,61 @@
-# rtlinux — Navegador de Jogos RuTracker
+# RuTrackGames — Navegador de Jogos RuTracker
 
-Navegador TUI em Python para o [RuTracker.org](https://rutracker.org/forum/), com catálogo local em cache, busca inteligente e interface interativa com Rich.
+TUI interativa para navegar e buscar torrents no [RuTracker.org](https://rutracker.org/forum/).
 
-**Autor:** troli · **Licença:** MIT · **Versão:** 5.0 (2026-04-23)
+**Autor:** DevTroli · **Licença:** MIT · **Versão:** 5.0
+
+[![PyPI](https://img.shields.io/pypi/v/rutracker-games.svg)](https://pypi.org/project/rutracker-games)
+[![Python](https://img.shields.io/pypi/pyversions/rutracker-games)](https://pypi.org/project/rutracker-games)
 
 ---
 
-## Requisitos
+## Instalação
 
-- Python 3.10+
-- `uv` (recomendado) ou `pip`
-
-## Instalação rápida
-
+**Global (recomendado):**
 ```bash
-git clone https://github.com/SEU_USUARIO/rtlinux.git && cd rtlinux
+pip install rutracker-games
+rutracker-games
+```
+
+**Desenvolvimento:**
+```bash
+git clone https://github.com/DevTroli/RuTrackGames.git && cd RuTrackGames
 uv venv && uv pip install -r requirements.txt
-uv run rtlinux.py
+uv run rl/rtgames.py
 ```
 
 ## Uso
 
 ```bash
-./rtlinux.py                    # Modo interativo
-./rtlinux.py -g "NieR"          # Busca direta
-./rtlinux.py --forum linux      # Filtrar por plataforma (linux/windows/mac/all)
-./rtlinux.py -r                 # Forçar atualização do catálogo
-./rtlinux.py -g "NieR" -a       # Todos os resultados (sem limite)
+rutracker-games                    # Modo interativo
+rutracker-games -g "NieR"          # Busca direta
+rutracker-games --forum linux      # Apenas Linux-native
+rutracker-games -c                 # Catálogo completo
+rutracker-games -r                 # Forçar atualização
 ```
 
-## Comandos no modo interativo
+## Comandos (TUI)
 
-| Comando       | Ação                                  |
-|---------------|---------------------------------------|
-| `<texto>`     | Buscar por nome                       |
-| `Enter`       | Listar todos os jogos                 |
-| `s seeds`     | Ordenar por seeds / size / date / name|
-| `f linux`     | Filtrar por plataforma                |
-| `n` / `p`     | Próxima / página anterior             |
-| `!info <n>`   | Detalhes do jogo #n                   |
-| `!open <n>`   | Abrir torrent no navegador            |
-| `!refresh`    | Atualizar catálogo                    |
-| `h`           | Ajuda · `q` = sair                    |
+| Comando | Ação |
+|---------|------|
+| `<texto>` | Buscar por jogo |
+| `Enter` | Listar catálogo |
+| `s seeds|size|date|name` | Ordenar |
+| `f linux|windows|mac` | Filtrar plataforma |
+| `n` / `p` | Próxima / anterior |
+| `!info <n>` | Detalhes |
+| `!open <n>` | Abrir torrent |
+| `!refresh` | Atualizar cache |
+| `h` | Ajuda · `q` | Sair |
 
-## Funcionalidades
+## Recursos
 
-- Scraper assíncrono com 24 conexões paralelas (aiohttp)
-- Cache XDG em `~/.cache/rtlinux/` (HTML + JSON)
-- Busca: substring → AND → palavras parciais
-- SSL/TLS verificado com `certifi`
-- Proteção contra SSRF (allowlist de domínios)
-- Escape automático de Rich markup
-
-## Dependências
-
-`aiohttp` · `beautifulsoup4` · `rich` · `aiofiles` · `certifi`
+- ⚡ Assíncrono: 24 conexões paralelas
+- 📦 Cache XDG em `~/.cache/rl/`
+- 🔒 SSL/TLS + SSRF protection
+- 🎨 Interface Rich colorida
+- 🔍 Busca inteligente substring/AND
 
 ---
 
-> Este projeto não é afiliado ao RuTracker.org. Use conforme os termos de serviço do site.
+> Não afiliado ao RuTracker.org. Use conforme os [termos de serviço](https://rutracker.org/forum/rules.php).
