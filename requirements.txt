@@ -1,0 +1,6 @@
+aiohttp>=3.9.0
+aiofiles>=23.2.0
+beautifulsoup4>=4.12.0
+certifi
+rich>=13.7.0
+urllib3>=2.0.0

@@ -1,0 +1,92 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rtlinux"
+version = "5.0.0"
+description = "RuTracker Games Browser — A TUI for browsing RuTracker.org game torrents"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Troli", email = "contato@pablotroli.com" }
+]
+maintainers = [
+    { name = "rtlinux contributors" }
+]
+keywords = [
+    "rutracker",
+    "torrent",
+    "games",
+    "cli",
+    "tui",
+    "terminal",
+    "linux",
+    "browser"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+]
+dependencies = [
+    "aiohttp>=3.9.0",
+    "aiofiles>=23.2.0",
+    "beautifulsoup4>=4.12.0",
+    "certifi",
+    "rich>=13.7.0",
+    "urllib3>=2.0.0",
+]
+
+[project.scripts]
+rtlinux = "rtlinux:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.6.0",
+    "mypy>=1.10.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+include = ["LICENSE", "README.md", "CHANGELOG.md"]
+
+[tool.hatch.build.targets.sdist]
+include = ["LICENSE", "README.md", "CHANGELOG.md", "pyproject.toml", "rtlinux.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "N", "UP", "B", "C4", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false  # Optional, pode habilitar depois
+
+[tool.coverage.run]
+source = ["rtlinux.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+]

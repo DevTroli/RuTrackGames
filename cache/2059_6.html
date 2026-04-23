@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="Windows-1251">
+<meta name="robots" content="noindex">
+	<link rel="canonical" href="https://rutracker.org/forum/viewforum.php?f=2059&start=300">
+
+<title>Игры для Linux с Wine, DOSBox и другими [стр. 7] :: Игры :: RuTracker.org</title>
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="search" type="application/opensearchdescription+xml" title="Поиск на RuTracker.org" href="https://static.rutracker.cc/opensearch.xml">
+<link href="https://feed.rutracker.cc/atom/f/2059.atom" rel="alternate" type="application/atom+xml" title="Игры для Linux с Wine, DOSBox и другими" />
+
+<script>
+window.BB = {
+	cur_domain: location.hostname.replace(/.*?(([a-z0-9-]+\.){1,2}[a-z0-9-]+)$/, '$1'),
+	form_token: '',
+	opt_js: {},
+
+	IS_GUEST: !!'1',
+	IMG_URL: 'https://static.rutracker.cc/templates/v1/images',
+	SMILES_URL: 'https://static.rutracker.cc/smiles',
+	catId: 19,
+	FORUM_ID: 2059,
+	parentForumId: 899,
+		PG_PER_PAGE: '50',
+	PG_BASE_URL: 'viewforum.php?f=2059',
+		COOKIE_MARK: 'bb_mark_read',
+	};
+BB.cookie_defaults = {
+	domain: '.' + BB.cur_domain,
+	path: "/forum/",
+};
+</script>
+<link href="https://static.rutracker.cc/templates/v1/min/eb83350bae3880e4073b81d26294de5d.all.min.css" rel="stylesheet">
+<script src="https://static.rutracker.cc/templates/v1/min/4e695e8ea9cf5a1dcc7aed231b887c51.lib.min.js"></script>
+<script src="https://static.rutracker.cc/templates/v1/min/3b60ab3546ba966484df4c3099b918ab.bb.min.js"></script>
+
+
+
+<style>
+.invisible-el {
+	/* @include element-invisible(); */
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+.hidden, .menu-sub, #ajax-loading, #ajax-error, var.ajax-params, #modal-blocker, .q-post {
+	display: none;
+}
+/**/
+#logo {
+	min-height: auto;
+}
+/**/
+/* temp */
+/* temp end */
+</style>
+
+<noscript>
+	<style>
+	.sp-body {
+		display: block; /* for bots */
+	}
+	</style>
+</noscript>
+
+</head>
+
+<body class="" style="">
+
+<div id="invisible-heap" class="invisible-el"></div>
+<div id="preload" class="invisible-el"></div>
+
+<div class="menu-sub" id="pg-jump">
+	<table style="border-spacing: 1px;">
+	<tr>
+		<th style="padding: 2px;">К странице...</th>
+	</tr>
+	<tr>
+		<td style="padding: 2px;">
+			<form onsubmit="BB.go_to_page( $('#pg-page').val() ); return false;">
+				<input id="pg-page" type="text" size="5" maxlength="4">
+				<input type="submit" value="Перейти">
+			</form>
+		</td>
+	</tr>
+	</table>
+</div>
+
+
+<div id="body_container">
+
+		<script>
+	if (top != self && !self.location.hostname.match(BB.allowed_translator_hosts)) {
+		$(function () {
+			$('body').html('<h1 style="text-align: center;"><br><br>Похоже, вас пытаются обмануть<br>frame\'s hostname: ' + self.location.hostname + '</h1>');
+			throw new Error('in frame');
+		});
+	}
+		</script>
+
+	<div id="page_container">
+
+		<div id="page_header" class="hide-for-print">
+
+			<div id="main-nav" class="site-nav clearfix">
+				<ul class="inlined middot-separated floatL">
+					<li>
+						<a href="index.php"><b>Главная</b></a>
+					</li>
+					<li>
+													<a href="tracker.php" rel="nofollow"><b>Трекер</b></a>
+											</li>
+					<li>
+						<a href="search.php" rel="nofollow"><b>Поиск</b></a>
+					</li>
+					<li>
+						<a href="groupcp.php" rel="nofollow"><b>Группы</b></a>
+					</li>
+					<li>
+						<a href="https://rutracker.wiki/" target="_blank"><b>FAQ</b></a>
+					</li>
+					<li>
+						<a href="viewtopic.php?t=6812335" style="color: #7b1fa2;"><b>VPN</b></a>
+					</li>
+					<li>
+						<a href="viewtopic.php?t=1045"><b>Правила</b></a>
+					</li>
+					<li>
+						<a href="viewtopic.php?t=6452965" style="color: #880e4f;"><b>Донаты</b></a>
+					</li>
+									</ul>
+											</div>
+			<!--/main-nav-->
+
+			
+			<div id="logo">
+				<table style="">
+				<tr>
+					<td id="logo-td" style="padding: 3px 7px 3px 15px;">
+						<a href="index.php" class="site-logo-link">
+								<img class="site-logo"
+		src="https://static.rutracker.cc/logo/logo-3.svg"
+		style=""
+		alt="logo">
+							</a>
+					</td>
+					<td class="tCenter w100" style="padding: 6px 10px 0 3px;">
+											</td>
+				</tr>
+				</table>
+			</div>
+			<!--/logo-->
+
+						<div class="topmenu">
+				<table class="w100">
+				<tr>
+					
+					<td class="tCenter pad_2 nowrap">
+						<div>
+															<a href="profile.php?mode=register" rel="nofollow"><b>Регистрация</b></a>
+								&nbsp;&#0183;&nbsp;
+								<a href="#" onclick="BB.toggle_top_login(); return false;" tabindex="5"><b>Вход</b></a>
+
+								<div id="top-login-box">
+									<form id="quick-search-guest" method="get" action="tracker.php">
+										<input id="search-text-guest" type="text" name="nm" value="" tabindex="1" accesskey="q">
+										<input type="submit" value="поиск" tabindex="2">
+									</form>
+									<form id="login-form-quick" method="post" action="login.php" style="display: none;">
+																				<input id="top-login-uname" type="text" name="login_username" tabindex="1" accesskey="l" placeholder="имя">
+										<input id="top-login-pwd" type="password" name="login_password" tabindex="2" placeholder="пароль">
+										<label title="Защищенное соединение" class="login-ssl-block" style="display: none;">
+											<input class="login-ssl" type="checkbox" tabindex="3" checked>SSL
+										</label>
+										<input id="top-login-btn" type="submit" name="login" value="вход" tabindex="4">
+									</form>
+								</div>
+
+								<a href="otp.php" rel="nofollow"><b>Забыли имя или пароль?</b></a>
+													</div>
+					</td>
+
+					
+				</tr>
+				</table>
+			</div><!--/topmenu-->
+			
+			
+		</div>
+		<!--/page_header-->
+
+		
+		<div id="page_content">
+			<table style="width: 100%; border: none;">
+			<tr>
+
+				
+				<td id="main_content">
+					<div id="main_content_wrap">
+
+						
+						
+						
+						
+						<!--/page_header.tpl-->
+
+<table class="w100">
+<tr>
+	<td class="w100 vBottom pad_2">
+		<h1 class="maintitle"><a href="viewforum.php?f=2059">Игры для Linux с Wine, DOSBox и другими</a></h1>
+						<div class="small" style="margin: 16px 4px 8px;">
+			<b><span class="pg-jump-menu"><a class="menu-root" href="#pg-jump" onclick="BB.focus_pg_input();">Страницы</a> :&nbsp;&nbsp;</span> <a class="pg" href="viewforum.php?f=2059&amp;start=250">Пред.</a>&nbsp;&nbsp;<a class="pg" href="viewforum.php?f=2059">1</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=50">2</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=100">3</a> ... <a class="pg" href="viewforum.php?f=2059&amp;start=250">6</a>, <b>7</b>, <a class="pg" href="viewforum.php?f=2059&amp;start=350">8</a> ... <a class="pg" href="viewforum.php?f=2059&amp;start=1000">21</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=1050">22</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=1100">23</a>&nbsp;&nbsp;<a class="pg" href="viewforum.php?f=2059&amp;start=350">След.</a></b>
+		</div>
+		
+		<table class="w100">
+		<tr>
+			<td class="pad_2"><a href="posting.php?f=2059&amp;mode=new_rel" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/post.gif" alt="Новая тема"></a></td>
+			<td class="nav nav-top w100 pad_2">
+				&nbsp;<a href="index.php?c=19" rel="nofollow">Игры</a>
+								<em>&raquo;</em>&nbsp;<a href="viewforum.php?f=899">Игры для Linux</a>
+								<em>&raquo;</em>&nbsp;<a href="viewforum.php?f=2059">Игры для Linux с Wine, DOSBox и другими</a>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	<td class="pad_2">
+			</td>
+</tr>
+</table>
+
+
+<a id="topics"></a>
+
+
+
+<table class="vf-table vf-tor forumline forum">
+<colgroup>
+	<col class="row1 vf-col-icon">
+	<col class="row1 vf-col-t-title">
+	<col class="row2 vf-col-tor">
+	<col class="row2 vf-col-replies">
+	<col class="row2 vf-col-last-post">
+</colgroup>
+<tr>
+	<th class="vf-col-icon"></th>
+	<th class="vf-col-t-title">Темы</th>
+	<th class="vf-col-tor">Торрент</th>
+	<th class="vf-col-replies">Отв.</th>
+	<th class="vf-col-last-post">Посл. сообщение</th>
+</tr>
+<tr>
+	<td colspan="5" class="row3 topicSep">Темы</td>
+</tr>
+<tr id="tr-5363243" class="hl-tr" data-topic_id="5363243">
+	<td id="5363243" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5363243" href="viewtopic.php?t=5363243" class="torTopic bold tt-text">Tom Clancy's Rainbow Six: Vegas (1.06.215) [x86] [RUS/ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=17809259" rel="nofollow" class="topicAuthor">Хрюнделёк</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5363243" rel="nofollow" class="small f-dl dl-stub">2.9&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">5</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>612</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-06-22 22:18</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=52695218" rel="nofollow">vl@dMSK</a>			<a href="viewtopic.php?p=87920218#87920218" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6488131" class="hl-tr" data-topic_id="6488131">
+	<td id="6488131" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6488131" href="viewtopic.php?t=6488131" class="torTopic bold tt-text">Deep Rock Galactic: Survivor [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6488131" rel="nofollow" class="small f-dl dl-stub">2.16&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">17</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>153</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-12-19 15:05</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=51320023" rel="nofollow">Gmer2004</a>			<a href="viewtopic.php?p=88597582#88597582" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5496609" class="hl-tr" data-topic_id="5496609">
+	<td id="5496609" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5496609" href="viewtopic.php?t=5496609" class="torTopic bold tt-text">Need for Speed: Undercover (1.0.1.18) [x86] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=17809259" rel="nofollow" class="topicAuthor">Хрюнделёк</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5496609" rel="nofollow" class="small f-dl dl-stub">3.65&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">6</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,514</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2018-02-10 01:52</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=17809259" rel="nofollow">Хрюнделёк</a>			<a href="viewtopic.php?p=74768760#74768760" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6024456" class="hl-tr" data-topic_id="6024456">
+	<td id="6024456" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6024456" href="viewtopic.php?t=6024456" class="torTopic bold tt-text">Horizon Zero Dawn (Complete Edition) [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6024456"  rel="nofollow">1</a> .. <a href="viewtopic.php?t=6024456&amp;start=60"  rel="nofollow">3</a>, <a href="viewtopic.php?t=6024456&amp;start=90"  rel="nofollow">4</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>9</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6024456" rel="nofollow" class="small f-dl dl-stub">59.56&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">102</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>2,744</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-05 18:50</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=43789313" rel="nofollow">andywoo</a>			<a href="viewtopic.php?p=88906330#88906330" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6772267" class="hl-tr" data-topic_id="6772267">
+	<td id="6772267" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6772267" href="viewtopic.php?t=6772267" class="torTopic bold tt-text">Syberia - Remastered [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6772267" rel="nofollow" class="small f-dl dl-stub">9.98&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">0</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>167</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-11-13 21:54</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow">Kron4ek</a>			<a href="viewtopic.php?p=88454614#88454614" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6133265" class="hl-tr" data-topic_id="6133265">
+	<td id="6133265" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6133265" href="viewtopic.php?t=6133265" class="torTopic bold tt-text">Age of Empires II (2): Definitive Edition [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6133265"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6133265&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>7</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6133265" rel="nofollow" class="small f-dl dl-stub">47.9&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">44</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>139</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-02-23 12:02</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow">Kron4ek</a>			<a href="viewtopic.php?p=88865363#88865363" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6671401" class="hl-tr" data-topic_id="6671401">
+	<td id="6671401" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6671401" href="viewtopic.php?t=6671401" class="torTopic bold tt-text">TEKKEN 8: Ultimate Edition (v.3.00.00) + 31 DLC [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow" class="topicAuthor">mozart78</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>2</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6671401" rel="nofollow" class="small f-dl dl-stub">109.75&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">12</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>93</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-19 15:23</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow">mozart78</a>			<a href="viewtopic.php?p=88965338#88965338" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5861823" class="hl-tr" data-topic_id="5861823">
+	<td id="5861823" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5861823" href="viewtopic.php?t=5861823" class="torTopic bold tt-text">Test Drive Unlimited Gold (1.66 A) [x86] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=20565500" rel="nofollow" class="topicAuthor">getgw</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>8</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5861823" rel="nofollow" class="small f-dl dl-stub">2.78&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">9</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>551</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-05 08:57</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=35397172" rel="nofollow">unixtime</a>			<a href="viewtopic.php?p=88905195#88905195" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6748369" class="hl-tr" data-topic_id="6748369">
+	<td id="6748369" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6748369" href="viewtopic.php?t=6748369" class="torTopic bold tt-text">Tourist Bus Simulator (v.1.10.8109<wbr>3) + 16 DLC [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow" class="topicAuthor">mozart78</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6748369" rel="nofollow" class="small f-dl dl-stub">21.38&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">3</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>88</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-01-08 14:38</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=27390635" rel="nofollow">dwarf0</a>			<a href="viewtopic.php?p=88677906#88677906" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6784600" class="hl-tr" data-topic_id="6784600">
+	<td id="6784600" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6784600" href="viewtopic.php?t=6784600" class="torTopic bold tt-text">Teenage Mutant Ninja Turtles: Splintered Fate (v.1.12.0) + 4 DLC [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow" class="topicAuthor">mozart78</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6784600" rel="nofollow" class="small f-dl dl-stub">2.33&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">1</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>110</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-12-09 16:34</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow">mozart78</a>			<a href="viewtopic.php?p=88559972#88559972" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6368550" class="hl-tr" data-topic_id="6368550">
+	<td id="6368550" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6368550" href="viewtopic.php?t=6368550" class="torTopic bold tt-text">Medal of Honor (2010) [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6368550" rel="nofollow" class="small f-dl dl-stub">4.31&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">10</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,309</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-05-04 20:12</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=53112047" rel="nofollow">dedushenka</a>			<a href="viewtopic.php?p=87740131#87740131" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6566989" class="hl-tr" data-topic_id="6566989">
+	<td id="6566989" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6566989" href="viewtopic.php?t=6566989" class="torTopic bold tt-text">Perfect World + Server 1.5.5 V156 [x86] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=49412616" rel="nofollow" class="topicAuthor">gastra1er</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6566989"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6566989&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>8</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6566989" rel="nofollow" class="small f-dl dl-stub">11.67&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">46</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>141</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-01-21 00:25</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=49412616" rel="nofollow">gastra1er</a>			<a href="viewtopic.php?p=88729109#88729109" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6804688" class="hl-tr" data-topic_id="6804688">
+	<td id="6804688" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6804688" href="viewtopic.php?t=6804688" class="torTopic bold tt-text">Perfect World + Server v1.7.6 Build 4311 [amd64] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=49412616" rel="nofollow" class="topicAuthor">gastra1er</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>6</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6804688" rel="nofollow" class="small f-dl dl-stub">30.07&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">17</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>69</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-02-25 01:20</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=49412616" rel="nofollow">gastra1er</a>			<a href="viewtopic.php?p=88871846#88871846" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6115448" class="hl-tr" data-topic_id="6115448">
+	<td id="6115448" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6115448" href="viewtopic.php?t=6115448" class="torTopic bold tt-text">Arcanum: Of Steamworks and Magick Obscura [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6115448"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6115448&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>13</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6115448" rel="nofollow" class="small f-dl dl-stub">2.78&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">37</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,729</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-01-23 19:34</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=31349885" rel="nofollow">sasha.stopchan...</a>			<a href="viewtopic.php?p=87297353#87297353" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6767145" class="hl-tr" data-topic_id="6767145">
+	<td id="6767145" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6767145" href="viewtopic.php?t=6767145" class="torTopic bold tt-text">Need for Speed Heat: Deluxe Edition (v.1.0.60.70<wbr>40) + 6 DLC [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow" class="topicAuthor">mozart78</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6767145" rel="nofollow" class="small f-dl dl-stub">28.27&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">3</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>882</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-31 14:04</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=26298104" rel="nofollow">lexzzz93</a>			<a href="viewtopic.php?p=89013219#89013219" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5547908" class="hl-tr" data-topic_id="5547908">
+	<td id="5547908" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5547908" href="viewtopic.php?t=5547908" class="torTopic bold tt-text">Dragon Age: Origins (Ultimate Edition) [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=5547908"  rel="nofollow">1</a>, <a href="viewtopic.php?t=5547908&amp;start=30"  rel="nofollow">2</a>, <a href="viewtopic.php?t=5547908&amp;start=60"  rel="nofollow">3</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>7</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5547908" rel="nofollow" class="small f-dl dl-stub">15.33&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">70</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>230</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-12 20:01</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=2907962" rel="nofollow">sasha2008</a>			<a href="viewtopic.php?p=88936872#88936872" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6209551" class="hl-tr" data-topic_id="6209551">
+	<td id="6209551" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6209551" href="viewtopic.php?t=6209551" class="torTopic bold tt-text">Empire Earth II (2): Gold Edition (Empire Earth II + The Art of Supremacy) [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>6</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6209551" rel="nofollow" class="small f-dl dl-stub">2.47&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">2</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>2,035</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2024-03-21 11:19</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=47606249" rel="nofollow">kunkunkun</a>			<a href="viewtopic.php?p=86039890#86039890" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6626075" class="hl-tr" data-topic_id="6626075">
+	<td id="6626075" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6626075" href="viewtopic.php?t=6626075" class="torTopic bold tt-text">MiSide [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>13</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6626075" rel="nofollow" class="small f-dl dl-stub">1.01&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">5</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,126</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-06-18 00:36</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=14779543" rel="nofollow">Darklamar</a>			<a href="viewtopic.php?p=87904298#87904298" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5090458" class="hl-tr" data-topic_id="5090458">
+	<td id="5090458" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5090458" href="viewtopic.php?t=5090458" class="torTopic bold tt-text">Planescape: Torment [x86] [Wine] [GOG] [ENG/RUS]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=5541310" rel="nofollow" class="topicAuthor">EugVV</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=5090458"  rel="nofollow">1</a>, <a href="viewtopic.php?t=5090458&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5090458" rel="nofollow" class="small f-dl dl-stub">1.46&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">31</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,188</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2024-02-22 11:24</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=43543413" rel="nofollow">Bumsya</a>			<a href="viewtopic.php?p=85915927#85915927" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5603721" class="hl-tr" data-topic_id="5603721">
+	<td id="5603721" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5603721" href="viewtopic.php?t=5603721" class="torTopic bold tt-text">Battlefield 1942: World War II Anthology (Road to Rome / Secret Weapon of WWII) [amd64] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=2971203" rel="nofollow" class="topicAuthor">gendalf415</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>2</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5603721" rel="nofollow" class="small f-dl dl-stub">1.73&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">12</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>2,027</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2021-03-14 17:15</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=31697844" rel="nofollow">keepsilence2012</a>			<a href="viewtopic.php?p=81095071#81095071" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5180474" class="hl-tr" data-topic_id="5180474">
+	<td id="5180474" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5180474" href="viewtopic.php?t=5180474" class="torTopic bold tt-text">F.E.A.R.: Platinum Collection (1.08, 1.0, 1.0) [x86] [RUS/ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=17809259" rel="nofollow" class="topicAuthor">Хрюнделёк</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5180474" rel="nofollow" class="small f-dl dl-stub">7.28&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">15</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,384</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2023-09-06 22:14</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=2203917" rel="nofollow">AshBone</a>			<a href="viewtopic.php?p=85163561#85163561" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6367579" class="hl-tr" data-topic_id="6367579">
+	<td id="6367579" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6367579" href="viewtopic.php?t=6367579" class="torTopic bold tt-text">[Антология] Medal of Honor. Classic Trilogy (Allied Assault + Spearhead + Breakthrough<wbr>) [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6367579" rel="nofollow" class="small f-dl dl-stub">4.96&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">10</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>997</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-09-28 10:08</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=11913997" rel="nofollow">jt137</a>			<a href="viewtopic.php?p=88263235#88263235" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6491668" class="hl-tr" data-topic_id="6491668">
+	<td id="6491668" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6491668" href="viewtopic.php?t=6491668" class="torTopic bold tt-text">[Антология] Хром. Золотое издание / Хроме: Спецназ [x86] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=49412616" rel="nofollow" class="topicAuthor">gastra1er</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6491668" rel="nofollow" class="small f-dl dl-stub">1.93&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">1</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>98</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-16 03:33</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=50877884" rel="nofollow">Феликс12</a>			<a href="viewtopic.php?p=88952039#88952039" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6157481" class="hl-tr" data-topic_id="6157481">
+	<td id="6157481" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6157481" href="viewtopic.php?t=6157481" class="torTopic bold tt-text">Victoria II (2) (+ 10 DLC) [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6157481" rel="nofollow" class="small f-dl dl-stub">1.06&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">11</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,252</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-04-07 10:32</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=49706357" rel="nofollow">VitorGRM</a>			<a href="viewtopic.php?p=89040166#89040166" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6616052" class="hl-tr" data-topic_id="6616052">
+	<td id="6616052" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6616052" href="viewtopic.php?t=6616052" class="torTopic bold tt-text">S.T.A.L.K.E.<wbr>R.: Shadow of Chernobyl - Народная Солянка 2024 (NS OGSR) [amd64] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6616052" rel="nofollow" class="small f-dl dl-stub">25.25&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">1</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>610</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-11-29 20:56</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=20241192" rel="nofollow">nubobap2010</a>			<a href="viewtopic.php?p=88519554#88519554" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5631416" class="hl-tr" data-topic_id="5631416">
+	<td id="5631416" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5631416" href="viewtopic.php?t=5631416" class="torTopic bold tt-text">S.T.A.L.K.E.<wbr>R.: Shadow of Chernobyl - Народная Солянка 2016 (OGSR Engine) [amd64] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=5631416"  rel="nofollow">1</a>, <a href="viewtopic.php?t=5631416&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5631416" rel="nofollow" class="small f-dl dl-stub">6.98&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">32</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,833</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2024-12-19 01:57</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=50867064" rel="nofollow">Radrigo1234</a>			<a href="viewtopic.php?p=87137964#87137964" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6127308" class="hl-tr" data-topic_id="6127308">
+	<td id="6127308" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6127308" href="viewtopic.php?t=6127308" class="torTopic bold tt-text">Geometry Dash [x86, amd64] [ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6127308"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6127308&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>24</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>3</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6127308" rel="nofollow" class="small f-dl dl-stub">337.6&nbsp;MB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">36</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>3,899</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-12 21:07</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=54654149" rel="nofollow">Qwerty671215</a>			<a href="viewtopic.php?p=88937170#88937170" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6522269" class="hl-tr" data-topic_id="6522269">
+	<td id="6522269" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6522269" href="viewtopic.php?t=6522269" class="torTopic bold tt-text">INDIKA [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6522269" rel="nofollow" class="small f-dl dl-stub">48.77&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">9</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>537</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2024-07-28 11:49</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=1808745" rel="nofollow">bazukas</a>			<a href="viewtopic.php?p=86525876#86525876" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6706501" class="hl-tr" data-topic_id="6706501">
+	<td id="6706501" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6706501" href="viewtopic.php?t=6706501" class="torTopic bold tt-text">RoadCraft [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6706501" rel="nofollow" class="small f-dl dl-stub">63.93&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">6</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>203</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-12-08 08:16</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=54186888" rel="nofollow">vaga2323</a>			<a href="viewtopic.php?p=88555249#88555249" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6775693" class="hl-tr" data-topic_id="6775693">
+	<td id="6775693" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6775693" href="viewtopic.php?t=6775693" class="torTopic bold tt-text">Wuchang: Fallen Feathers Deluxe Edition (2025) (v.179951) + 6 DLC [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow" class="topicAuthor">mozart78</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6775693" rel="nofollow" class="small f-dl dl-stub">24.71&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">1</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>235</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-11-22 17:03</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=32830638" rel="nofollow">Токсичная Улито...</a>			<a href="viewtopic.php?p=88488623#88488623" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6225063" class="hl-tr" data-topic_id="6225063">
+	<td id="6225063" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6225063" href="viewtopic.php?t=6225063" class="torTopic bold tt-text">Songs of Conquest [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6225063"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6225063&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6225063" rel="nofollow" class="small f-dl dl-stub">2.05&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">41</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>73</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-02-11 14:24</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=45506782" rel="nofollow">zozilintes</a>			<a href="viewtopic.php?p=88815954#88815954" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5322084" class="hl-tr" data-topic_id="5322084">
+	<td id="5322084" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5322084" href="viewtopic.php?t=5322084" class="torTopic bold tt-text">Zuma (1.0, 1.0.4.9495) [x86] [ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=17809259" rel="nofollow" class="topicAuthor">Хрюнделёк</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5322084" rel="nofollow" class="small f-dl dl-stub">178.9&nbsp;MB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">4</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>2,366</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-07-30 21:19</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=44270614" rel="nofollow">infinitieunique</a>			<a href="viewtopic.php?p=88044510#88044510" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6454006" class="hl-tr" data-topic_id="6454006">
+	<td id="6454006" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6454006" href="viewtopic.php?t=6454006" class="torTopic bold tt-text">Warhammer 40000: Rogue Trader [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6454006"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6454006&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>9</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6454006" rel="nofollow" class="small f-dl dl-stub">39.6&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">54</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>163</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-01-01 19:15</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=17330946" rel="nofollow">Амано Дзяку...</a>			<a href="viewtopic.php?p=88650398#88650398" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5771823" class="hl-tr" data-topic_id="5771823">
+	<td id="5771823" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5771823" href="viewtopic.php?t=5771823" class="torTopic bold tt-text">Ancestors: The Humankind Odyssey (1.4) [amd64] [Multi] [DXVK] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41187726" rel="nofollow" class="topicAuthor">дЗЫНЬь</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5771823" rel="nofollow" class="small f-dl dl-stub">8.2&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">19</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>474</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-30 21:36</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=44279386" rel="nofollow">molochthegod</a>			<a href="viewtopic.php?p=89011045#89011045" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6018751" class="hl-tr" data-topic_id="6018751">
+	<td id="6018751" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6018751" href="viewtopic.php?t=6018751" class="torTopic bold tt-text">Just Cause 4 [amd64] [MULTi13] [DXVK] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=45243998" rel="nofollow" class="topicAuthor">johncena141</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6018751" rel="nofollow" class="small f-dl dl-stub">65.24&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">6</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>736</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2024-02-23 17:10</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=27475055" rel="nofollow">youswer</a>			<a href="viewtopic.php?p=85922062#85922062" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6129588" class="hl-tr" data-topic_id="6129588">
+	<td id="6129588" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6129588" href="viewtopic.php?t=6129588" class="torTopic bold tt-text">Divine Divinity [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6129588" rel="nofollow" class="small f-dl dl-stub">3.45&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">0</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>333</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2021-10-29 23:55</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow">Kron4ek</a>			<a href="viewtopic.php?p=82204164#82204164" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6510326" class="hl-tr" data-topic_id="6510326">
+	<td id="6510326" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6510326" href="viewtopic.php?t=6510326" class="torTopic bold tt-text">Смута / Smuta [amd64] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6510326"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6510326&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6510326" rel="nofollow" class="small f-dl dl-stub">24.86&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">50</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>197</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-12-05 23:31</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow">Kron4ek</a>			<a href="viewtopic.php?p=88545207#88545207" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5589270" class="hl-tr" data-topic_id="5589270">
+	<td id="5589270" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5589270" href="viewtopic.php?t=5589270" class="torTopic bold tt-text">The Witcher 3: Wild Hunt (Game of the Year Edition) [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=5589270"  rel="nofollow">1</a> .. <a href="viewtopic.php?t=5589270&amp;start=180"  rel="nofollow">7</a>, <a href="viewtopic.php?t=5589270&amp;start=210"  rel="nofollow">8</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>12</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>1</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5589270" rel="nofollow" class="small f-dl dl-stub">44.37&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">219</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>3,143</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2024-12-10 13:25</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=40871830" rel="nofollow">Nehtez</a>			<a href="viewtopic.php?p=87099682#87099682" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6434097" class="hl-tr" data-topic_id="6434097">
+	<td id="6434097" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6434097" href="viewtopic.php?t=6434097" class="torTopic bold tt-text">The Talos Principle 2 (+ DLC Road to Elysium) [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=30675380" rel="nofollow" class="topicAuthor">WTTM</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6434097"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6434097&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>4</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>3</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6434097" rel="nofollow" class="small f-dl dl-stub">103.66&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">50</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>145</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-01-04 18:44</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=50434512" rel="nofollow">maxplank777</a>			<a href="viewtopic.php?p=88662414#88662414" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6795081" class="hl-tr" data-topic_id="6795081">
+	<td id="6795081" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6795081" href="viewtopic.php?t=6795081" class="torTopic bold tt-text">Sid Meier's Civilization<wbr> I, II, CivNet, Colonization<wbr> [amd64] [ENG] [DosBox]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=37810" rel="nofollow" class="topicAuthor">LamerOk</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>5</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6795081" rel="nofollow" class="small f-dl dl-stub">1013.1&nbsp;MB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">3</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>81</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-13 13:44</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=37810" rel="nofollow">LamerOk</a>			<a href="viewtopic.php?p=88939590#88939590" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6550330" class="hl-tr" data-topic_id="6550330">
+	<td id="6550330" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6550330" href="viewtopic.php?t=6550330" class="torTopic bold tt-text">Riven [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>2</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6550330" rel="nofollow" class="small f-dl dl-stub">23.19&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">1</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>84</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-01-02 20:59</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=46236794" rel="nofollow">nickie000</a>			<a href="viewtopic.php?p=87202715#87202715" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5300601" class="hl-tr" data-topic_id="5300601">
+	<td id="5300601" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5300601" href="viewtopic.php?t=5300601" class="torTopic bold tt-text">Supreme Commander: Forged Alliance. Forever [x86] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=7060289" rel="nofollow" class="topicAuthor">BOSS_SAS</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=5300601"  rel="nofollow">1</a>, <a href="viewtopic.php?t=5300601&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5300601" rel="nofollow" class="small f-dl dl-stub">7.88&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">34</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,017</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2023-05-06 04:58</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=19214796" rel="nofollow">Лубуг</a>			<a href="viewtopic.php?p=84683413#84683413" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6682249" class="hl-tr" data-topic_id="6682249">
+	<td id="6682249" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6682249" href="viewtopic.php?t=6682249" class="torTopic bold tt-text">The Elder Scrolls IV (4): Oblivion Remastered [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=6682249"  rel="nofollow">1</a>, <a href="viewtopic.php?t=6682249&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>8</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6682249" rel="nofollow" class="small f-dl dl-stub">120.18&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">44</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>592</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-04-05 14:58</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=33989496" rel="nofollow">CRUZMAN9</a>			<a href="viewtopic.php?p=89033542#89033542" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6662893" class="hl-tr" data-topic_id="6662893">
+	<td id="6662893" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6662893" href="viewtopic.php?t=6662893" class="torTopic bold tt-text">[В разработке] Jotunnslayer<wbr>: Hordes of Hel [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6662893" rel="nofollow" class="small f-dl dl-stub">4.69&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">1</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>79</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-09-04 10:14</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=13548424" rel="nofollow">tor9995</a>			<a href="viewtopic.php?p=88169510#88169510" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5190827" class="hl-tr" data-topic_id="5190827">
+	<td id="5190827" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5190827" href="viewtopic.php?t=5190827" class="torTopic bold tt-text">Command &amp; Conquer: Red Alert 2 + Yuri's Revenge [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=5190827"  rel="nofollow">1</a>, <a href="viewtopic.php?t=5190827&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>35</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>2</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5190827" rel="nofollow" class="small f-dl dl-stub">2.66&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">55</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>8,621</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-04-11 11:11</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=33019567" rel="nofollow">Myzsterious...</a>			<a href="viewtopic.php?p=87639957#87639957" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-5228837" class="hl-tr" data-topic_id="5228837">
+	<td id="5228837" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-5228837" href="viewtopic.php?t=5228837" class="torTopic bold tt-text">Total War: Rome 2 (Emperor Edition) [x86] [RUS / ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+						<span class="topicPG">&nbsp;[<img src="https://static.rutracker.cc/templates/v1/images/icon_minipost.gif" class="icon1" alt=""> <a href="viewtopic.php?t=5228837"  rel="nofollow">1</a>, <a href="viewtopic.php?t=5228837&amp;start=30"  rel="nofollow">2</a> ]</span>		</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>6</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=5228837" rel="nofollow" class="small f-dl dl-stub">13.91&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">36</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>997</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-02-24 21:02</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow">Kron4ek</a>			<a href="viewtopic.php?p=88870993#88870993" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6755858" class="hl-tr" data-topic_id="6755858">
+	<td id="6755858" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6755858" href="viewtopic.php?t=6755858" class="torTopic bold tt-text">Syberia (v.1.0.0.v7 build 86533) [amd64] [ENG] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow" class="topicAuthor">mozart78</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>3</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6755858" rel="nofollow" class="small f-dl dl-stub">1.51&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">1</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>60</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-11-22 16:09</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow">mozart78</a>			<a href="viewtopic.php?p=88488422#88488422" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6418372" class="hl-tr" data-topic_id="6418372">
+	<td id="6418372" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6418372" href="viewtopic.php?t=6418372" class="torTopic bold tt-text">Thief Simulator 2 [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow" class="topicAuthor">Kron4ek</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>2</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6418372" rel="nofollow" class="small f-dl dl-stub">4.87&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">0</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>323</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2023-10-06 11:32</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=25313640" rel="nofollow">Kron4ek</a>			<a href="viewtopic.php?p=85291713#85291713" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6748335" class="hl-tr" data-topic_id="6748335">
+	<td id="6748335" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6748335" href="viewtopic.php?t=6748335" class="torTopic bold tt-text">SILENT HILL f - Digital Deluxe (2025) (v.1.2.38275<wbr>5 (1.11)) + 7 DLC [amd64] [Multi] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=41894680" rel="nofollow" class="topicAuthor">mozart78</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>10</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6748335" rel="nofollow" class="small f-dl dl-stub">40.36&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">12</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>276</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2026-03-26 09:24</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=48074344" rel="nofollow">emilia viane</a>			<a href="viewtopic.php?p=88992151#88992151" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr id="tr-6249860" class="hl-tr" data-topic_id="6249860">
+	<td id="6249860" class="vf-col-icon vf-topic-icon-cell">
+		<img class="topic_icon" src="https://static.rutracker.cc/templates/v1/images/folder_dl.gif" alt="">
+			</td>
+
+	<td class="vf-col-t-title tt" style="padding: 3px 5px 3px 3px;">
+						<div class="torTopic">
+									<span class="tor-icon tor-approved">&radic;</span>&#0183;												<a id="tt-6249860" href="viewtopic.php?t=6249860" class="torTopic bold tt-text">Watch Dogs - Digital Deluxe Edition [amd64] [ENG] [RUS] [Wine]</a>
+					</div>
+		<div class="topicAuthor" style="padding-top: 2px;">
+						<a href="profile.php?mode=viewprofile&amp;u=30675380" rel="nofollow" class="topicAuthor">WTTM</a>
+								</div>
+	</td>
+
+	<td class="vf-col-tor tCenter med nowrap" style="padding: 2px 4px;">
+				<div>
+			<div>
+				<span class="seedmed" title="Seeders"><b>8</b></span><span class="med"> | </span><span class="leechmed" title="Leechers"><b>0</b></span>
+			</div>
+			<div style="padding-top: 2px" class="small">
+				<a href="dl.php?t=6249860" rel="nofollow" class="small f-dl dl-stub">17.41&nbsp;GB</a>			</div>
+		</div>
+			</td>
+
+	<td class="vf-col-replies tCenter small nowrap" style="padding: 3px 4px 2px;">
+		<p>
+			<span title="Ответов">13</span>
+		</p>
+				<p style="padding-top: 2px" class="med" title="Торрент скачан">
+			<b>1,290</b>
+		</p>
+			</td>
+
+	<td class="vf-col-last-post tCenter small nowrap" style="padding: 3px 6px 2px;">
+		<p>2025-09-26 14:40</p>
+		<p style="padding-top: 2px">
+			<a href="profile.php?mode=viewprofile&amp;u=51507314" rel="nofollow">DarkLord4563</a>			<a href="viewtopic.php?p=88255328#88255328" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/icon_latest_reply.gif" class="icon2" alt="&raquo;"></a>
+		</p>
+	</td>
+</tr>
+<tr>
+	<td colspan="5" class="row2 med pad_4 tCenter input-buttons">
+				&nbsp;
+			</td>
+</tr>
+</table>
+
+
+<table class="w100 pad_2">
+<tr>
+	<td><a href="posting.php?f=2059&amp;mode=new_rel" rel="nofollow"><img src="https://static.rutracker.cc/templates/v1/images/post.gif" alt="Новая тема"></a></td>
+	<td class="nav w100">
+		&nbsp;<a href="index.php">Главная</a>
+		<em>&raquo;</em> <a href="index.php?c=19" rel="nofollow">Игры</a>
+		<em>&raquo;</em>&nbsp;<a href="viewforum.php?f=899">Игры для Linux</a>		<em>&raquo;</em>&nbsp;<a href="viewforum.php?f=2059">Игры для Linux с Wine, DOSBox и другими</a>
+	</td>
+</tr>
+</table>
+
+<div class="bottom_info pad_2">
+
+		<div id="pagination" class="nav clearfix">
+		<p style="float: left">Страница <b>7</b> из <b>23</b></p>
+		<p style="float: right"><span class="pg-jump-menu"><a class="menu-root" href="#pg-jump" onclick="BB.focus_pg_input();">Страницы</a> :&nbsp;&nbsp;</span> <a class="pg" href="viewforum.php?f=2059&amp;start=250">Пред.</a>&nbsp;&nbsp;<a class="pg" href="viewforum.php?f=2059">1</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=50">2</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=100">3</a> ... <a class="pg" href="viewforum.php?f=2059&amp;start=250">6</a>, <b>7</b>, <a class="pg" href="viewforum.php?f=2059&amp;start=350">8</a> ... <a class="pg" href="viewforum.php?f=2059&amp;start=1000">21</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=1050">22</a>, <a class="pg" href="viewforum.php?f=2059&amp;start=1100">23</a>&nbsp;&nbsp;<a class="pg" href="viewforum.php?f=2059&amp;start=350">След.</a></p>
+	</div>
+	
+	<div class="tRight">
+		<span id="jumpbox-wrap"></span>
+	</div>
+
+	</div><!--/bottom_info-->
+
+				</div><!--/main_content_wrap-->
+			</td><!--/main_content-->
+
+		</tr>
+		</table>
+	</div><!--/page_content-->
+
+	<!--page_footer-->
+	<div id="page_footer" class="hide-for-print">
+
+		
+		<div class="clear"></div>
+
+		<nav id="footer-info-links">
+			<div>
+				<a href="info.php?show=user_agreement" rel="nofollow">Условия использования</a>
+				&middot;
+				<a href="info.php?show=advert" rel="nofollow">Реклама на сайте</a>
+				&middot;
+				<a href="info.php?show=copyright_holders" rel="nofollow">Для правообладателей</a>
+				&middot;
+				<a href="info.php?show=press" rel="nofollow">Для прессы</a>
+				&middot;
+				<a href="viewtopic.php?t=2234744">Для провайдеров</a>
+				<!--&middot;-->
+				<!--<a href="http://rutracker.news">Блог</a>-->
+				&middot;
+				<a href="https://rutracker.wiki">Торрентопедия</a>
+			</div>
+			<div>
+				<a href="viewtopic.php?t=1045"><b>Правила</b></a>
+				&middot;
+				<a href="/go/8" rel="nofollow">Кому задать вопрос</a>
+				&middot;
+				<a href="viewforum.php?f=1538">Авторские раздачи</a>
+				&middot;
+				<a href="viewforum.php?f=1289">Конкурсы</a>
+				&middot;
+				<a href="viewforum.php?f=2332">Новости &quot;Хранителей&quot; и &quot;Антикваров&quot;</a>
+				&middot;
+				<a href="#" onclick="return post2url('index.php', {rand_rel: 1});" rel="nofollow">Случайная раздача</a>
+			</div>
+		</nav>
+
+		
+		<div class="tCenter nowrap" style="margin: 18px 4px 4px 4px;">
+								</div>
+
+		<div class="footer-bottom-links">
+			<ul class="inlined middot-separated">
+				<li><a href="groupcp.php?g=104792" rel="nofollow" target="_blank">Администрация</a></li>
+				<li><a href="groupcp.php?g=104787" rel="nofollow" target="_blank">Модераторы</a></li>
+				<li><a href="groupcp.php?g=104841" rel="nofollow" target="_blank">Тех. помощь</a></li>
+				<li><a href="https://t.me/rutracker_news" rel="nofollow" target="_blank">Telegram-канал</a></li>
+			</ul>
+			<div class="wide">
+									<script>
+					$(function () {
+						var title = "";
+						var src = "https://counter.yadro.ru/hit?t44.1;r" + encodeURIComponent(document.referrer) +
+							((typeof (screen) == "undefined") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) +
+							";u" + encodeURIComponent(document.URL) + ";h" + encodeURIComponent(title.substring(0, 80)) + ";" + Math.random();
+						$('<img src="' + src + '" alt="">').on('load', function () {
+							$('#liveinternet').append(this);
+						});
+					});
+					</script>
+					<a id="liveinternet" href="https://www.liveinternet.ru/stat/rutracker.org/index.html?lang=ru" target="_blank"></a>
+							</div>
+			<ul class="inlined middot-separated">
+																							</ul>
+		</div>
+
+	</div><!--/page_footer-->
+</div><!--/page_container-->
+
+
+<div id="ajax-loading"><b>Loading...</b></div>
+<div id="ajax-error"><b>Error</b></div>
+<style>
+#bb-alert-box {
+	width: auto;
+	max-width: 800px;
+	line-height: 18px;
+	display: none;
+}
+#bb-alert-msg {
+	min-width: 400px;
+	max-height: 400px;
+	margin: 50px 20px;
+	padding: 10px;
+	overflow: auto;
+	text-align: center;
+}
+.bb-alert-err {
+	color: #7E0000;
+	background: #FFEEEE;
+	box-shadow: 0 0 20px #B85353;
+	font-weight: bold;
+}
+</style>
+<div id="bb-alert-box">
+	<div id="bb-alert-msg"></div>
+</div>
+<div id="modal-blocker"></div>
+
+<script>
+$(function () {
+	if (!BB.hasET() && BB.getUrlParam('view') !== 'print') {
+		BB.navbar.init();
+	}
+});
+</script>
+<div id="nav-panel" class="nav-hidden-arrow hide-for-print">
+	<div id="nav-up" class="nav-btn" title="Вверх">
+		<span class="nav-icon"></span>
+	</div>
+	<div id="nav-settings" class="nav-btn">
+		<span class="nav-icon" title="Настройки"></span>
+		<ul id="nav-opt-menu">
+			<li class="nav-event" data-event="click">Показывать по клику</li>
+			<li class="nav-event" data-event="mouseenter">Показывать по наведению</li>
+		</ul>
+	</div>
+	<div id="nav-down" class="nav-btn" title="Вниз">
+		<span class="nav-icon"></span>
+	</div>
+	<div class="nav-hidden-overlay"></div>
+</div>
+
+	</div><!--/body_container-->
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f0d7049bd732507',t:'MTc3Njk1MzI4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
