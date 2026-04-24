@@ -2,8 +2,6 @@
 
 Interactive TUI for browsing and searching torrents on [RuTracker.org](https://rutracker.org/forum/).
 
-[![PyPI](https://img.shields.io/pypi/v/rutracker-games.svg)](https://pypi.org/project/rutracker-games)
-[![Python](https://img.shields.io/pypi/pyversions/rutracker-games)](https://pypi.org/project/rutracker-games)
 [![License](https://img.shields.io/pypi/l/rutracker-games)](LICENSE)
 [![Downloads](https://static.pepy.tech/badge/rutracker-games)](https://pepy.tech/project/rutracker-games)
 
