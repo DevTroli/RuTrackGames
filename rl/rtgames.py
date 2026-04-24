@@ -159,19 +159,71 @@ async def get_total_pages(session, sem, fid):
         content = raw.decode("cp1251", errors="ignore")
         soup = bs(content, "html.parser")
         # try pagination div
-        pg = soup.find("div", class_="pg")
-        if pg:
-            nums = [int(a.text) for a in pg.find_all("a") if a.text.strip().isdigit()]
+        # Look for pagination in the main content area, not just the hidden menu
+        pagination_div = soup.find("div", class_="w100", attrs={"class": "vBottom", "style": "padding: 2px 4px;"})
+        if pagination_div:
+            # Look for page links with class 'pg'
+            pg_links = pagination_div.find_all("a", class_="pg")
+            if not pg_links:
+                # Try alternative approach - look in the main pagination area
+                pg_container = soup.find("div", id="pagination")
+                if not pg_container:
+                    # Try to find any div containing pagination links
+                    pg_container = soup.find("div", class_="nav")
+                if not pg_container:
+                    # Try to find the small div with pagination text
+                    pg_container = soup.find("div", class_="small")
+                if pg_container:
+                    pg_links = pg_container.find_all("a", class_="pg")
+        else:
+            # Fallback to original approach
+            pg_links = soup.find_all("a", class_="pg")
+
+        if pg_links:
+            nums = []
+            for link in pg_links:
+                # Extract page numbers from href attributes like "viewforum.php?f=50&start=1250"
+                href = link.get("href", "")
+                if "start=" in href:
+                    try:
+                        start_val = href.split("start=")[1].split("&")[0]
+                        page_num = int(start_val) // 50 + 1  # Convert start value to page number
+                        nums.append(page_num)
+                    except (ValueError, IndexError):
+                        # If we can't parse the page number, use the link text
+                        if link.text.strip().isdigit():
+                            nums.append(int(link.text))
+                elif link.text.strip().isdigit():
+                    nums.append(int(link.text))
+
             if nums:
                 pages = max(nums)
                 os.makedirs(CACHE_DIR, exist_ok=True)
                 with open(max_file, "w") as f:
                     f.write(str(pages))
                 return pages
+        else:
+            # Try to find page numbers in text-based pagination (like in the cached HTML)
+            # Look for div containing pagination text
+            pagination_text_div = soup.find("div", class_="small", style="margin: 16px 4px 8px;")
+            if pagination_text_div:
+                # Extract page numbers from the text content
+                page_links = pagination_text_div.find_all("a")
+                nums = []
+                for link in page_links:
+                    if link.text.strip().isdigit():
+                        nums.append(int(link.text))
+                if nums:
+                    pages = max(nums)
+                    os.makedirs(CACHE_DIR, exist_ok=True)
+                    with open(max_file, "w") as f:
+                        f.write(str(pages))
+                    return pages
+
         console.print(
-            f"[yellow] Could not detect pages for f={fid}, defaulting to 1[/yellow]"
+            f"[yellow] Could not detect pages for f={fid}, defaulting to 47[/yellow]"
         )
-        return 1
+        return 47
 
 
 # ── Parse one HTML page ───────────────────────────────────────────────────────
